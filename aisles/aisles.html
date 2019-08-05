@@ -1,0 +1,881 @@
+<html>
+<head>
+  <link rel="stylesheet" href="aisles.css">
+  <script src="jquery-3.4.1.min.js"></script>
+  <script src="jquery.mousewheel.min.js"></script>
+  <script src="jquery.scrollTo.min.js"></script>
+  <script src="aisles.js"></script>
+</head>
+
+<body>
+<div class="aisle">
+
+  <a class="prev" href="#">
+    <span class="arrow"></span>
+  </a>
+
+  <fieldset>
+    <legend>Produce</legend>
+
+    <div class="items">
+      <div class="prodType">
+
+        <div class="legend">
+          <div class="underline"><a href="#">Fruits</a></div>
+        </div>
+
+<!--    Watermelon    -->
+        <div class="item">
+
+          <a class="image" href="#">
+            <span class="helper"></span>
+            <img src="imgs/watermelon.jpg" />
+          </a>
+
+          <a class="name" href="#" title="More Info">Watermelon</a>
+
+          <a class="price" href="#">$1.00</a>
+
+          <br>
+
+          <div class="quant">
+            <button name="less">
+              <span class="icon icon-minus">-</span>
+            </button>
+
+            <input name="quantity" type="tel" size="1" maxlength="2"
+                   placeholder="0" onfocus="this.oldvalue = this.value;"
+                   value="0" />
+
+            <button name="more">
+              <span class="icon icon-plus">+</span>
+            </button>
+
+            <input name="id" type="hidden" value="1" />
+          </div>
+        </div>
+
+<!--    Citrus    -->
+        <div class="item">
+
+          <a class="image" href="#">
+            <span class="helper"></span>
+            <img data-id="0" src="imgs/citrus.jpg" />
+            <img data-id="1" src="imgs/orange.jpg" style="display:none" />
+            <img data-id="2" src="imgs/lemon.jpg" style="display:none" />
+            <img data-id="3" src="imgs/lime.jpg" style="display:none" />
+            <img data-id="4" src="imgs/grapefruit.jpg" style="display:none" />
+            <img data-id="5" src="imgs/pomelo.jpg" style="display:none" />
+          </a>
+
+          <select class="variants">
+            <option data-price="Select a variant" value="0">Citrus</option>
+            <option data-price="$1.00" value="1">Orange</option>
+            <option data-price="$1.25" value="2">Lemon</option>
+            <option data-price="$1.33" value="3">Lime</option>
+            <option data-price="$1.10" value="4">Grapefruit</option>
+            <option data-price="$1.50" value="5">Pomelo</option>
+          </select>
+
+          <a class="price" href="#">Select a variant</a>
+          
+          <br>
+
+          <div class="quant" style="visibility:hidden">
+            <button name="less">
+              <span class="icon icon-minus">-</span>
+            </button>
+
+            <input name="quantity" type="tel" size="1" maxlength="2"
+                   placeholder="0" onfocus="this.oldvalue = this.value;"
+                   value="0" />
+
+            <button name="more">
+              <span class="icon icon-plus">+</span>
+            </button>
+
+            <input name="id" type="hidden" value="1" />
+          </div>
+        </div>
+
+<!--    Pomegranate    -->
+        <div class="item">
+
+          <a class="image" href="#">
+            <span class="helper"></span>
+            <img src="imgs/pomegranate.jpg" />
+          </a>
+
+          <a class="name" href="#" title="More Info">Pomegranate</a>
+
+          <a class="price" href="#">$2.00</a>
+
+          <br>
+
+          <div class="quant">
+            <button name="less">
+              <span class="icon icon-minus">-</span>
+            </button>
+
+            <input name="quantity" type="tel" size="1" maxlength="2"
+                   placeholder="0" onfocus="this.oldvalue = this.value;"
+                   value="0" />
+
+            <button name="more">
+              <span class="icon icon-plus">+</span>
+            </button>
+
+            <input name="id" type="hidden" value="1" />
+          </div>
+        </div>
+
+<!--    Apple    -->
+        <div class="item">
+
+          <a class="image" href="#">
+            <span class="helper"></span>
+            <img src="imgs/apple.jpg" />
+          </a>
+
+          <a class="name" href="#" title="More Info">Apple</a>
+          <a class="price" href="#">$1.45</a>
+
+          <br>
+
+          <div class="quant">
+            <button name="less">
+              <span class="icon icon-minus">-</span>
+            </button>
+
+            <input name="quantity" type="tel" size="1" maxlength="2"
+                   placeholder="0" onfocus="this.oldvalue = this.value;"
+                   value="0" />
+
+            <button name="more">
+              <span class="icon icon-plus">+</span>
+            </button>
+
+            <input name="id" type="hidden" value="1" />
+          </div>
+        </div>
+
+<!--    Strawberry    -->
+        <div class="item">
+
+          <a class="image" href="#">
+            <span class="helper"></span>
+            <img src="imgs/strawberry.jpg" />
+          </a>
+
+          <a class="name" href="#" title="More Info">Strawberry</a>
+          <a class="price" href="#">$1.45</a>
+
+          <br>
+
+          <div class="quant">
+            <button name="less">
+              <span class="icon icon-minus">-</span>
+            </button>
+
+            <input name="quantity" type="tel" size="1" maxlength="2"
+                   placeholder="0" onfocus="this.oldvalue = this.value;"
+                   value="0" />
+
+            <button name="more">
+              <span class="icon icon-plus">+</span>
+            </button>
+
+            <input name="id" type="hidden" value="1" />
+          </div>
+        </div>
+
+<!--    Raspberry    -->
+        <div class="item">
+
+          <a class="image" href="product.html">
+            <span class="helper"></span>
+            <img src="imgs/raspberry.jpg" />
+          </a>
+
+          <a class="name" href="product.html" title="More Info">Raspberry</a>
+          <a class="price" href="product.html">$1.45</a>
+
+          <br>
+
+          <div class="quant">
+            <button name="less">
+              <span class="icon icon-minus">-</span>
+            </button>
+
+            <input name="quantity" type="tel" size="1" maxlength="2"
+                   placeholder="0" onfocus="this.oldvalue = this.value;"
+                   value="0" />
+
+            <button name="more">
+              <span class="icon icon-plus">+</span>
+            </button>
+
+            <input name="id" type="hidden" value="1" />
+          </div>
+        </div>
+
+<!--    Blueberry    -->
+        <div class="item">
+
+          <a class="image" href="product.html">
+            <span class="helper"></span>
+            <img src="imgs/blueberry.jpg" />
+          </a>
+
+          <a class="name" href="product.html" title="More Info">Blueberry</a>
+          <a class="price" href="product.html">$1.45</a>
+
+          <br>
+
+          <div class="quant">
+            <button name="less">
+              <span class="icon icon-minus">-</span>
+            </button>
+
+            <input name="quantity" type="tel" size="1" maxlength="2"
+                   placeholder="0" onfocus="this.oldvalue = this.value;"
+                   value="0" />
+
+            <button name="more">
+              <span class="icon icon-plus">+</span>
+            </button>
+
+            <input name="id" type="hidden" value="1" />
+          </div>
+        </div>
+
+      </div> <!----------End of Fruits---------->
+
+      <div class="prodType">
+
+        <div class="legend">
+          <div class="underline"><a href="#">Stalks</a></div>
+        </div>
+
+<!--    Celery    -->
+        <div class="item">
+
+          <a class="image" href="#">
+            <span class="helper"></span>
+            <img src="imgs/celery.jpg" />
+          </a>
+
+          <a class="name" href="#" title="More Info">Celery</a>
+
+          <a class="price" href="#">$1.00</a>
+
+          <br>
+
+          <div class="quant">
+            <button name="less">
+              <span class="icon icon-minus">-</span>
+            </button>
+
+            <input name="quantity" type="tel" size="1" maxlength="2"
+                   placeholder="0" onfocus="this.oldvalue = this.value;"
+                   value="0" />
+
+            <button name="more">
+              <span class="icon icon-plus">+</span>
+            </button>
+
+            <input name="id" type="hidden" value="1" />
+          </div>
+        </div>
+
+<!--    Asparagus    -->
+        <div class="item">
+
+          <a class="image" href="#">
+            <span class="helper"></span>
+            <img src="imgs/asparagus.jpg" />
+          </a>
+
+          <a class="name" href="#" title="More Info">asparagus</a>
+
+          <a class="price" href="#">$1.00</a>
+
+          <br>
+
+          <div class="quant">
+            <button name="less">
+              <span class="icon icon-minus">-</span>
+            </button>
+
+            <input name="quantity" type="tel" size="1" maxlength="2"
+                   placeholder="0" onfocus="this.oldvalue = this.value;"
+                   value="0" />
+
+            <button name="more">
+              <span class="icon icon-plus">+</span>
+            </button>
+
+            <input name="id" type="hidden" value="1" />
+          </div>
+        </div>
+
+      </div> <!----------End of Stalks---------->
+
+      <div class="prodType">
+
+        <div class="legend">
+          <div class="underline"><a href="#">Roots & Stems</a></div>
+        </div>
+
+<!--    Potato    -->
+        <div class="item">
+
+          <a class="image" href="#">
+            <span class="helper"></span>
+            <img src="imgs/potato.jpg" />
+          </a>
+
+          <a class="name" href="#" title="More Info">Potato</a>
+
+          <a class="price" href="#">$1.00</a>
+
+          <br>
+
+          <div class="quant">
+            <button name="less">
+              <span class="icon icon-minus">-</span>
+            </button>
+
+            <input name="quantity" type="tel" size="1" maxlength="2"
+                   placeholder="0" onfocus="this.oldvalue = this.value;"
+                   value="0" />
+
+            <button name="more">
+              <span class="icon icon-plus">+</span>
+            </button>
+
+            <input name="id" type="hidden" value="1" />
+          </div>
+        </div>
+
+<!--    Carrot    -->
+        <div class="item">
+
+          <a class="image" href="#">
+            <span class="helper"></span>
+            <img src="imgs/carrot.jpg" />
+          </a>
+
+          <a class="name" href="#" title="More Info">Carrot</a>
+
+          <a class="price" href="#">$1.00</a>
+
+          <br>
+
+          <div class="quant">
+            <button name="less">
+              <span class="icon icon-minus">-</span>
+            </button>
+
+            <input name="quantity" type="tel" size="1" maxlength="2"
+                   placeholder="0" onfocus="this.oldvalue = this.value;"
+                   value="0" />
+
+            <button name="more">
+              <span class="icon icon-plus">+</span>
+            </button>
+
+            <input name="id" type="hidden" value="1" />
+          </div>
+        </div>
+
+<!--    Ginger    -->
+        <div class="item">
+
+          <a class="image" href="#">
+            <span class="helper"></span>
+            <img src="imgs/ginger.jpg" />
+          </a>
+
+          <a class="name" href="#" title="More Info">Ginger</a>
+
+          <a class="price" href="#">$1.00</a>
+
+          <br>
+
+          <div class="quant">
+            <button name="less">
+              <span class="icon icon-minus">-</span>
+            </button>
+
+            <input name="quantity" type="tel" size="1" maxlength="2"
+                   placeholder="0" onfocus="this.oldvalue = this.value;"
+                   value="0" />
+
+            <button name="more">
+              <span class="icon icon-plus">+</span>
+            </button>
+
+            <input name="id" type="hidden" value="1" />
+          </div>
+        </div>
+
+      </div> <!----------End of Roots---------->
+
+      <div class="prodType">
+
+        <div class="legend">
+          <div class="underline"><a href="#">Bulbs</a></div>
+        </div>
+
+<!--    Onion    -->
+        <div class="item">
+
+          <a class="image" href="#">
+            <span class="helper"></span>
+            <img src="imgs/onion.jpg" />
+          </a>
+
+          <a class="name" href="#" title="More Info">Onion</a>
+
+          <a class="price" href="#">$1.00</a>
+
+          <br>
+
+          <div class="quant">
+            <button name="less">
+              <span class="icon icon-minus">-</span>
+            </button>
+
+            <input name="quantity" type="tel" size="1" maxlength="2"
+                   placeholder="0" onfocus="this.oldvalue = this.value;"
+                   value="0" />
+
+            <button name="more">
+              <span class="icon icon-plus">+</span>
+            </button>
+
+            <input name="id" type="hidden" value="1" />
+          </div>
+        </div>
+
+<!--    Garlic    -->
+        <div class="item">
+
+          <a class="image" href="#">
+            <span class="helper"></span>
+            <img src="imgs/garlic.jpg" />
+          </a>
+
+          <a class="name" href="#" title="More Info">Garlic</a>
+
+          <a class="price" href="#">$1.00</a>
+
+          <br>
+
+          <div class="quant">
+            <button name="less">
+              <span class="icon icon-minus">-</span>
+            </button>
+
+            <input name="quantity" type="tel" size="1" maxlength="2"
+                   placeholder="0" onfocus="this.oldvalue = this.value;"
+                   value="0" />
+
+            <button name="more">
+              <span class="icon icon-plus">+</span>
+            </button>
+
+            <input name="id" type="hidden" value="1" />
+          </div>
+        </div>
+
+<!--    Leek    -->
+        <div class="item">
+
+          <a class="image" href="#">
+            <span class="helper"></span>
+            <img src="imgs/leek.jpg" />
+          </a>
+
+          <a class="name" href="#" title="More Info">Leek</a>
+
+          <a class="price" href="#">$1.00</a>
+
+          <br>
+
+          <div class="quant">
+            <button name="less">
+              <span class="icon icon-minus">-</span>
+            </button>
+
+            <input name="quantity" type="tel" size="1" maxlength="2"
+                   placeholder="0" onfocus="this.oldvalue = this.value;"
+                   value="0" />
+
+            <button name="more">
+              <span class="icon icon-plus">+</span>
+            </button>
+
+            <input name="id" type="hidden" value="1" />
+          </div>
+        </div>
+
+<!--    Chive    -->
+        <div class="item">
+
+          <a class="image" href="#">
+            <span class="helper"></span>
+            <img src="imgs/chive.jpg" />
+          </a>
+
+          <a class="name" href="#" title="More Info">Chive</a>
+
+          <a class="price" href="#">$1.00</a>
+
+          <br>
+
+          <div class="quant">
+            <button name="less">
+              <span class="icon icon-minus">-</span>
+            </button>
+
+            <input name="quantity" type="tel" size="1" maxlength="2"
+                   placeholder="0" onfocus="this.oldvalue = this.value;"
+                   value="0" />
+
+            <button name="more">
+              <span class="icon icon-plus">+</span>
+            </button>
+
+            <input name="id" type="hidden" value="1" />
+          </div>
+        </div>
+      </div> <!----------End of Bulbs---------->
+    </div> <!----------End of Items---------->
+  </fieldset>
+
+  <a class="next" href="#">
+    <span class="arrow"></span>
+  </a>
+
+</div> <!----------End of Produce Aisle---------->
+
+<div class="aisle">
+
+  <a class="prev" href="#">
+    <span class="arrow"></span>
+  </a>
+
+  <fieldset>
+    <legend>Canned Food</legend>
+
+    <div class="items">
+      
+      <div class="prodType">
+        <div class="legend">
+          <div class="underline"><a href="#">Soup Type1</a></div>
+        </div>
+
+<!--    Type1    -->
+        <div class="item">
+
+          <a class="image" href="#">
+            <span class="helper"></span>
+            <img src="imgs/campbell-chicken.jpg" />
+          </a>
+
+          <a class="name" href="#" title="More Info">Chicken Noodle Soup</a>
+
+          <a class="price" href="#">$1.00</a>
+
+          <br>
+
+          <div class="quant">
+            <button name="less">
+              <span class="icon icon-minus">-</span>
+            </button>
+
+            <input name="quantity" type="tel" size="1" maxlength="2"
+                   placeholder="0" onfocus="this.oldvalue = this.value;"
+                   value="0" />
+
+            <button name="more">
+              <span class="icon icon-plus">+</span>
+            </button>
+
+            <input name="id" type="hidden" value="1" />
+          </div>
+        </div>
+      </div> <!----------End of Type1---------->
+
+      <div class="prodType">
+        <div class="legend">
+          <div class="underline"><a href="#">Soup Type2</a></div>
+        </div>
+
+<!--    Type2    -->
+        <div class="item">
+
+          <a class="image" href="#">
+            <span class="helper"></span>
+            <img src="imgs/campbell-chicken.jpg" />
+          </a>
+
+          <a class="name" href="#" title="More Info">Chicken Noodle Soup</a>
+
+          <a class="price" href="#">$1.00</a>
+
+          <br>
+
+          <div class="quant">
+            <button name="less">
+              <span class="icon icon-minus">-</span>
+            </button>
+
+            <input name="quantity" type="tel" size="1" maxlength="2"
+                   placeholder="0" onfocus="this.oldvalue = this.value;"
+                   value="0" />
+
+            <button name="more">
+              <span class="icon icon-plus">+</span>
+            </button>
+
+            <input name="id" type="hidden" value="1" />
+          </div>
+        </div>
+      </div> <!----------End of Type2---------->
+
+      <div class="prodType">
+        <div class="legend">
+          <div class="underline"><a href="#">Soup Type3</a></div>
+        </div>
+
+<!--    Type3    -->
+        <div class="item">
+
+          <a class="image" href="#">
+            <span class="helper"></span>
+            <img src="imgs/campbell-chicken.jpg" />
+          </a>
+
+          <a class="name" href="#" title="More Info">Chicken Noodle Soup</a>
+
+          <a class="price" href="#">$1.00</a>
+
+          <br>
+
+          <div class="quant">
+            <button name="less">
+              <span class="icon icon-minus">-</span>
+            </button>
+
+            <input name="quantity" type="tel" size="1" maxlength="2"
+                   placeholder="0" onfocus="this.oldvalue = this.value;"
+                   value="0" />
+
+            <button name="more">
+              <span class="icon icon-plus">+</span>
+            </button>
+
+            <input name="id" type="hidden" value="1" />
+          </div>
+        </div>
+      </div> <!----------End of Type3---------->
+
+      <div class="prodType">
+        <div class="legend">
+          <div class="underline"><a href="#">Soup Type4</a></div>
+        </div>
+
+<!--    Type4    -->
+        <div class="item">
+
+          <a class="image" href="#">
+            <span class="helper"></span>
+            <img src="imgs/campbell-chicken.jpg" />
+          </a>
+
+          <a class="name" href="#" title="More Info">Chicken Noodle Soup</a>
+
+          <a class="price" href="#">$1.00</a>
+
+          <br>
+
+          <div class="quant">
+            <button name="less">
+              <span class="icon icon-minus">-</span>
+            </button>
+
+            <input name="quantity" type="tel" size="1" maxlength="2"
+                   placeholder="0" onfocus="this.oldvalue = this.value;"
+                   value="0" />
+
+            <button name="more">
+              <span class="icon icon-plus">+</span>
+            </button>
+
+            <input name="id" type="hidden" value="1" />
+          </div>
+        </div>
+      </div> <!----------End of Type4---------->
+
+      <div class="prodType">
+        <div class="legend">
+          <div class="underline"><a href="#">Soup Type5</a></div>
+        </div>
+
+<!--    Type5    -->
+        <div class="item">
+
+          <a class="image" href="#">
+            <span class="helper"></span>
+            <img src="imgs/campbell-chicken.jpg" />
+          </a>
+
+          <a class="name" href="#" title="More Info">Chicken Noodle Soup</a>
+
+          <a class="price" href="#">$1.00</a>
+
+          <br>
+
+          <div class="quant">
+            <button name="less">
+              <span class="icon icon-minus">-</span>
+            </button>
+
+            <input name="quantity" type="tel" size="1" maxlength="2"
+                   placeholder="0" onfocus="this.oldvalue = this.value;"
+                   value="0" />
+
+            <button name="more">
+              <span class="icon icon-plus">+</span>
+            </button>
+
+            <input name="id" type="hidden" value="1" />
+          </div>
+        </div>
+      </div> <!----------End of Type5---------->
+
+      <div class="prodType">
+        <div class="legend">
+          <div class="underline"><a href="#">Soup Type6</a></div>
+        </div>
+
+<!--    Type6    -->
+        <div class="item">
+
+          <a class="image" href="#">
+            <span class="helper"></span>
+            <img src="imgs/campbell-chicken.jpg" />
+          </a>
+
+          <a class="name" href="#" title="More Info">Chicken Noodle Soup</a>
+
+          <a class="price" href="#">$1.00</a>
+
+          <br>
+
+          <div class="quant">
+            <button name="less">
+              <span class="icon icon-minus">-</span>
+            </button>
+
+            <input name="quantity" type="tel" size="1" maxlength="2"
+                   placeholder="0" onfocus="this.oldvalue = this.value;"
+                   value="0" />
+
+            <button name="more">
+              <span class="icon icon-plus">+</span>
+            </button>
+
+            <input name="id" type="hidden" value="1" />
+          </div>
+        </div>
+      </div> <!----------End of Type6---------->
+
+      <div class="prodType">
+        <div class="legend">
+          <div class="underline"><a href="#">Soup Type7</a></div>
+        </div>
+
+<!--    Type7    -->
+        <div class="item">
+
+          <a class="image" href="#">
+            <span class="helper"></span>
+            <img src="imgs/campbell-chicken.jpg" />
+          </a>
+
+          <a class="name" href="#" title="More Info">Chicken Noodle Soup</a>
+
+          <a class="price" href="#">$1.00</a>
+
+          <br>
+
+          <div class="quant">
+            <button name="less">
+              <span class="icon icon-minus">-</span>
+            </button>
+
+            <input name="quantity" type="tel" size="1" maxlength="2"
+                   placeholder="0" onfocus="this.oldvalue = this.value;"
+                   value="0" />
+
+            <button name="more">
+              <span class="icon icon-plus">+</span>
+            </button>
+
+            <input name="id" type="hidden" value="1" />
+          </div>
+        </div>
+      </div> <!----------End of Type7---------->
+
+      <div class="prodType">
+        <div class="legend">
+          <div class="underline"><a href="#">Soup Type8</a></div>
+        </div>
+
+<!--    Type8    -->
+        <div class="item">
+
+          <a class="image" href="#">
+            <span class="helper"></span>
+            <img src="imgs/campbell-chicken.jpg" />
+          </a>
+
+          <a class="name" href="#" title="More Info">Chicken Noodle Soup</a>
+
+          <a class="price" href="#">$1.00</a>
+
+          <br>
+
+          <div class="quant">
+            <button name="less">
+              <span class="icon icon-minus">-</span>
+            </button>
+
+            <input name="quantity" type="tel" size="1" maxlength="2"
+                   placeholder="0" onfocus="this.oldvalue = this.value;"
+                   value="0" />
+
+            <button name="more">
+              <span class="icon icon-plus">+</span>
+            </button>
+
+            <input name="id" type="hidden" value="1" />
+          </div>
+        </div>
+      </div> <!----------End of Type8---------->
+
+    </div> <!----------End of Items---------->
+  </fieldset>
+
+  <a class="next" href="#">
+    <span class="arrow"></span>
+  </a>
+
+</div> <!----------End of Canned Food---------->
+</body>
+
+</html>
